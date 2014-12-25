@@ -12,6 +12,42 @@
 */
 
 Route::get('/', function()
+    {
+        return View::make('mytest',array('name'=>'IanMac'));
+        
+});
+
+
+Route::get('iuse', function()
 {
-	return View::make('hello');
+    return View::make('iuse');
+});
+
+Route::get('/mytest','MytestController@mymethod');
+
+
+Route::post('/ajax',array('before' => 'csrfx',function(){
+
+    $data = Input::all();
+
+    $data['call_status']="607";
+
+    if(Request::ajax())
+    {
+        //return 'ajax';
+        return Response::json($data);
+    }
+}));
+
+Route::filter('csrfx', function()
+    {
+        
+       
+        $token = Request::ajax() ? Request::header('X-CSRF-Token') : Input::get('_token');
+        if (Session::token() != $token) {
+            
+            
+            throw new Illuminate\Session\TokenMismatchException;
+        } 
+          
 });
