@@ -6,8 +6,8 @@
         <title>IUSE Prototype</title>
 
         <!-- Bootstrap -->
-        <link href="frontend/css/bootstrap.min.css" rel="stylesheet">
-        <link href="frontend/css/app.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
         
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -88,7 +88,7 @@
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="frontend/js/bootstrap.min.js"></script>
-        <script src="frontend/js/app.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
 </body>
 </html>

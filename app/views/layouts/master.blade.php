@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Master Template</title>
     
-    <link href="{{ URL::asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ URL::asset('css/bootstrap.min.css')}}" rel="stylesheet">
    
 </head>
 <body>
